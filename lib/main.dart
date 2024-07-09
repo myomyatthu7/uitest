@@ -33,22 +33,24 @@ import 'package:uitest/text_box.dart';
 import 'my_button.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
   //runApp(const RawScrollbarExampleApp());
   //runApp(const MaterialApp(home: WelcomeScreen(),),);
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  //double ss = fontSize1;
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.grey[300],
         appBar: AppBar(
-          title: const Text("Hello Flutter"),
+          title: const Text("Hello Flutter",style: TextStyle(fontSize: fontSize1),),
           backgroundColor: Colors.cyan,
           actions: const [
             Icon(Icons.menu),
@@ -58,7 +60,7 @@ class MyApp extends StatelessWidget {
             icon: const Icon(Icons.home),
           ),
         ),
-        body: const Center(
+        body: Center(
           // child: MyButton(),
           // child: Button(),
           //child: Space(),
@@ -68,7 +70,7 @@ class MyApp extends StatelessWidget {
           //child: FlowApp(),
           //child: MyRefresh(),
           // child: MySnackBar(),
-          // child: MyTextBox(),
+          child: MyTextBox(),
           //child: MyContainer(),
           //child: MyExpanded(),
           // child: Column(
