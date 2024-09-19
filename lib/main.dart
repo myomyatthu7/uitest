@@ -14,6 +14,7 @@ import 'package:uitest/date_time/date_time.dart';
 import 'package:uitest/date_time/time_picker.dart';
 import 'package:uitest/date_time/update_date_time.dart';
 import 'package:uitest/dialog/dialog.dart';
+import 'package:uitest/dialog/dialog2_box.dart';
 import 'package:uitest/dialog/show_dialog.dart';
 import 'package:uitest/expended.dart';
 import 'package:uitest/flow/my_flow.dart';
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
           //child: FlowApp(),
           //child: MyRefresh(),
           // child: MySnackBar(),
-          child: MyTextBox(),
+          // child: MyTextBox(),
           //child: MyContainer(),
           //child: MyExpanded(),
           // child: Column(
@@ -100,6 +101,7 @@ class MyApp extends StatelessWidget {
           // child: MyDateRange(),
           // child: MyDialog(),
           // child: BtnIgnore(),
+          child: Dialog2Box(),
         ),
       ),
     );
